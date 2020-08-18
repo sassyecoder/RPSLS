@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Global Variables */
+* {
+    margin: 0;
+    padding: 0;
+    color: #fcfbfe;
+    font-family: 'Press Start 2P', cursive;
+}
+html {
+    overflow-y: hidden;
+}
+body {
+    animation: page 0.70s;
+}
+
+/* Home Page CSS */
+#hero-layer1 { 
+    background-image: url(assets/BG-home.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 1.5s;
+}
+#hero-layer2 {
+    padding: 0;
+    background-color: #1D1135;
+    opacity: 85%;
+}
+/* Home Page Logo */
+#main-logo {
+    max-width: 35vmax;
+    height: auto;
+    transition: 1s;
+}
+/* Home Page title */
+.title {
+    margin-top: 2rem;
+    color: #fcfbfe;
+    line-height: 1.5;
+}
+/* Let's Play Button */
+.neon1 {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfbfe;
+    background: linear-gradient(180deg, #1D1135 56.25%, rgba(29, 17, 53, 0) 100%), linear-gradient(180deg, #BA1E68 0%, rgba(186, 30, 104, 0) 100%);
+    mix-blend-mode: normal;
+    border: 3.5px solid #BA1E68;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 5px rgba(186, 30, 104, 0.7));
+    border-radius: 50px;
+    transition: 1s;
+}
+.neon1:hover {
+    color: #fcfbfe;
+    box-shadow: 0 5px 10px 0 #BA1E68 inset, 0 5px 10px 0 #BA1E68,
+                          0 5px 10px 0 #BA1E68 inset, 0 5px 10px 0 #BA1E68;
+    text-shadow: 0 0 5px #BA1E68, 0 0 5px #BA1E68;
+    transition-delay: 0.1s;
+}
+
+/* Game Page CSS */
+#game{
+    background: url(assets/BG.png);
+    background-size: cover;
+    background-position: inherit;
+    transition: 1s;
+}
+/* Navbar */
+#my-navbar img {
+    display: block;
+}
+#my-navbar .container,
+#my-navbar .container>div {
+  display: flex;
+ padding: 0!important;
+}
+#my-navbar .container>div {
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+#my-navbar .navbar-item img {
+    max-height: 0.1 !important;
+}
+.navbar-item img{
+    max-height: 2.5rem!important;
+}
+/* Logo */
+#smallLogo {
+    animation: rotation 10s infinite linear;
+    visibility: visible;
+}
+/* Game Page title */
+#my-title {
+    background: -webkit-linear-gradient(#fcfbfe, #BA1E68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 7px 3px rgba(0, 0, 0, 0.4);
+}
+/* Rules Button */
+#rules {
+    border-radius: 50%;
+}
+#rules:hover{
+    box-shadow: 0 0 10px #fcfbfe, 0 0 10px #fcfbfe, 0 0 10px #fcfbfe ;    
+    visibility: visible;
+}
+/* Game page | Body */
+#game .hero-body {
+    margin: 0 auto;
+}
+.hero-body {
+    padding: 0!important;
+}
+/* Toggle Image */
+#rules-image {
+    display: none;
+}
+#rules-image img {
+    margin: auto;
+    max-width: 30vmax;
+    padding: 0.1rem;
+    height: auto;
+    border: 3px solid #BA1E68;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px rgba(186, 30, 104, 0.5);
+    transition: 1s;
+}
+/* Output Button Background */
+#my-game {
+    opacity: 1;
+    transition: 1s;
+}
+#my-game .image {
+    margin: 1.2rem auto;
+    width: 150px;
+    height: 150px;
+    background: rgba(252, 251, 254, 0.9);
+    border: 5px solid #BA1E68;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(186, 30, 104, 0.7);
+}
+/* Output Button Image */
+#btn-o img{
+    max-width: 50%!important;
+    height: auto;
+    margin: 2rem auto;
+}
+/* Input Buttons */
+.buttons {
+    justify-content: center!important;
+}
+#btn-input  .button {
+    max-width: 5vw;
+    height: auto;
+    background: rgba(252, 251, 254, 0.9);
+    border: 5px solid #BA1E68;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(186, 30, 104, 0.7);
+    visibility: visible;
+}
+#btn-input  .button:hover{
+    transition: all 0.5s;
+    background: rgba(252, 251, 254, 0.9);
+    border: 5px solid #BA1E68;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(186, 30, 104, 0.7);
+    visibility: visible;
+    color: #fcfbfe;
+    max-width: 5vw;
+    height: auto;
+    transform: scale(0.9);
+    box-shadow: 0 0 10px #BA1E68, 0 0 40px #BA1E68, 0 0 80px #BA1E68;
+}
+.active {
+    transition: all 0.5s;
+    background: rgba(252, 251, 254, 0.9)!important;
+    border: 5px solid #BA1E68!important;
+    border-radius: 50%!important;
+    box-sizing: border-box!important;
+    box-shadow: 0px 5px 5px rgba(186, 30, 104, 0.7)!important;
+    visibility: visible!important;
+    color: #fcfbfe!important;
+    max-width: 5vw!important;
+    height: auto!important;
+    transform: scale(1);
+    box-shadow: 0 0 10px #BA1E68, 0 0 40px #BA1E68, 0 0 80px #BA1E68!important;
+} 
+#restart{
+    max-width: 3vmax!important;
+    border-radius: 50%;
+    border: 2px dotted #BA1E68;
+    box-shadow: 0px 2px 2px rgba(186, 30, 104, 0.7);
+    margin: 1rem;
+}
+#restart:hover {
+    box-shadow: 0 0 10px #BA1E68, 0 0 40px #BA1E68, 0 0 80px #BA1E68;
+    visibility: visible;
+}
+/* Footer */
+#my-footer {
+    background: linear-gradient(180deg, rgba(186, 30, 104, 0.39) 0%, rgba(255, 255, 255, 0) 100%), #1D1135;
+}
+#my-footer p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #fcfbfe;
+}
+#my-footer img {
+    max-width: 15px;
+}
+
+/* Animations */
+@keyframes page {
+    from {
+        transform: rotateY(-100deg);
+    }
+    to {
+        transform: rotateY(0);
+    }
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+    #btn-input.buttons {
+        display: block;
+    }
+    #btn-input.buttons {
+        margin: 0 0.5rem;
+        transform: scale(0.9);
+    }
+}
+@media screen and (min-width: 360px, max-width1024px) {
+    #btn-o.image{
+        transform: scale(1);
+        margin: 2rem auto;
+    }
+    #btn-input.buttons {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    #restart{
+        max-width: 5vmax!important;
+    }
+}
+@media screen and (width:320px) {
+    #btn-o.image {
+        margin: 0.2rem auto;
+        transform: scale(0.8);
+    }
+    #btn-input.buttons {
+        margin: 0 0.2rem;
+        transform: scale(0.8);
+    }
+    #restart{
+        max-width: 3vmax!important;
+    }
+}
+@media screen and (min-width: 768px, max-width: 1024px) {
+    #my-title {
+        font-size: 1.2rem!important;
+    }
+    #btn-o.image {
+        transform: scale(1.8);
+        margin: 2rem auto;
+    }
+    #btn-input.buttons {
+        transform: scale(1);
+        margin-top: 5rem;
+    }
+    #result{
+        margin: 2rem auto;
+    }
+    #restart{
+        max-width: 3vmax!important;
+    }
+}

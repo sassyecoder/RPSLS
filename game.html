@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Include Meta Tags Here -->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+<meta content='#ba1e68' name='theme-color' />
+<meta name="keywords" content="Rock Paper Scissor Lizard Spock, Rock, Paper, Scissor, Lizard, Spock, The Big Bang Theory, Game, RPSLS, Sneha Omer">
+
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="Rock Paper Scissor Lizard Spock - Game">
+<meta name="og:description" content="A Game Inspired by the show The Big Bang Theory">
+<meta name="og:image" content="https://i.imgur.com/wjKxz11g.jpg">
+<meta name="og:image:alt" content="Rock Paper Scissor Lizard Spock - Game">
+<meta name="og:url" content="https://sassyecoder.github.io/RPSLS/">
+<meta name="article:author" content="https://www.facebook.com/sassyecoder">
+<meta name="og:site_name" content="Rock Paper Scissor Lizard Spock - Game">
+<meta name="og:type" content="website">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Rock Paper Scissor Lizard Spock - Game">
+<meta name="twitter:description" content="A Game Inspired by the show The Big Bang Theory">
+<meta name="twitter:site" content="@sassyecoder">
+<meta name="twitter:creator" content="@sassyecoder">
+<meta name="twitter:image:src" content="https://i.imgur.com/wjKxz11g.jpg">
+<!-- Search Engine -->
+<meta name="description" content="A Game Inspired by the show The Big Bang Theory">
+<meta name="image" content="https://i.imgur.com/wjKxz11g.jpg">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="Rock Paper Scissor Lizard Spock - Game">
+<meta name="author" content="https://sassyecoder.github.io/" />
+<meta itemprop="description" content="A Game Inspired by the show The Big Bang Theory">
+<meta itemprop="image" content="https://i.imgur.com/wjKxz11g.jpg">
+<!-- Include Meta Tags Here -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161706771-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161706771-2');
+</script>
+
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Game - Rock Paper Scissor Lizard Spock</title>
+</head>
+<body>
+  <section id="game" class="hero is-fullheight">
+    <div class="hero-head">
+      <!--Navbar-->
+      <nav id="my-navbar" class="navbar">
+        <div class="container is-fluid">
+          <div class="navbar-item column is-1" id="smallLogo"><a href="index.html"><span title="Home"><img src="assets/MainLogo-small.svg" alt="RPSLS" width="150"></span></a></div>
+          <div class="navbar-item has-text-centered"><p id="my-title" class="title is-size-5 is-uppercase is-size-1-tablet is-size-4-tablet is-size-7-mobile">rock paper scissor lizard spock</p></div>
+          <div class="navbar-item column is-1"><img id="rules" title="Click to know Rules" src="assets/rules.svg" alt="Rules" ></div>
+        </div>
+      </nav>
+    </div>
+      <!--Game-->
+    <div class="hero-body is-fullwidth">
+      <figure id="rules-image" class="image container  has-text-centered">
+        <img class="is-rounded" src="assets/RulesImage.png" alt="Rules-Image">
+      </figure>
+      <div id="my-game" class="container has-text-centered">
+        <figure id="btn-o" class="image is-256x256 is-rounded " ><img class="output is-1by1" src="assets/Rock.svg"  alt=""></figure>
+        <div id="btn-input" class="buttons are-large">
+          <button id="rock" title="Rock" class="button is-rounded" onclick="return game(0)"><span  class="icon"><img class="p-input" src="assets/Rock.svg" alt="Rock"></span></button>
+          <button id="paper" title="Paper" class="button is-rounded" onclick="return game(1);"><span  class="icon"><img class="p-input" src="assets/Paper.svg" alt="Paper"></span></button>
+          <button id="scissor" title="Scissor" class="button is-rounded" onclick="return game(2)"><span  class="icon"><img class="p-input" src="assets/Scissor.svg" alt="Scissor"></span></button>
+          <button id="lizard" title="Lizard" class="button is-rounded" onclick="return game(3)"><span class="icon"><img class="p-input" src="assets/Lizard.svg" alt="Lizard"></span></button>
+          <button id="spock" title="Spock" class="button is-rounded" onclick="return game(4)"><span  class="icon"><img class="p-input" src="assets/Spock.svg" alt="Spock"></span></button>
+        </div>
+        <button class="neon1 button is-fullwidth is-large-mobile"><p id="results" class="subtitle is-size-6 has-text-weight-light has-text-white is-uppercase">RESULTS!</p></button>
+        <img id="restart" title="Restart" onclick="location.reload();" src="assets/Reload.svg" alt="Restart">
+        <audio id="audio"  src="sounds/inputOnClick.mp3"></audio>
+      </div>
+    </div> 
+    <!--Footer-->
+    <div id="my-footer" class="hero-foot">
+      <p class="subtitle is-size-7 has-text-centered has-text-weight-light">Designed & Developed by <a href="https://sassyecoder.github.io/"><img src="assets/SassyeCoder.svg" alt=""></a></p>
+    </div>
+  </section>
+    <script src="app.js"></script>
+</body>
+</html>
