@@ -12,6 +12,3 @@
 - JAVASCRIPT
 #
 #### Don't forget to star the repo, if you enjoyed the game. :smiley:
-
-
-<script src="https://gist.github.com/rxaviers/7360908.js"></script>
